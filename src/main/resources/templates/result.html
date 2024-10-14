@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Result Page</title>
+    <link rel="stylesheet" type="text/css" href="/templates/v1.css">
+</head>
+<body>
+<style>
+    h1{
+color:red;
+font-size:50px;
+}
+
+
+label{
+font-size:20px;
+}
+button{
+font-size:16px;
+color:blue;
+}
+</style>
+
+<center>
+<h1>welcome to semresults</h1>
+<form action="/api/students/studentbio" method="get">
+    <br>
+    <br>
+    <br>
+    <label for="searchParam">Roll Number/email :</label>
+    <input type="searchParam" id="searchParam" name="searchParam">
+    <button type="submit">Submit</button>
+</form>
+</center>
+</body>
+</html>

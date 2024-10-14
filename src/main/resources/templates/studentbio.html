@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Bio</title>
+  <style>
+      th{
+      background-color:blue;
+      font-size:20px;
+      color:white;
+      width:5%;
+      }
+      tr{
+      color:black;
+      background-color:#6CB4EE;
+      font-size:20px;
+      }
+  </style>
+</head>
+<body>
+
+<h1>Student Bio</h1>
+<table border="1">
+    <tr>
+
+        <th>Roll Number</th>
+        <th>First Name</th>
+        <th>Gender</th>
+        <th>Mobile No</th>
+        <th>Email</th>
+    </tr>
+    <tr th:if="${studentBio != null}">
+        <!--<td th:text="${studentBio.id}"></td>-->
+        <td th:text="${studentBio.rollNumber}"></td>
+        <td th:text="${studentBio.firstName}"></td>
+        <td th:text="${studentBio.gender}"></td>
+        <td th:text="${studentBio.mobileNo}"></td>
+        <td th:text="${studentBio.email}"></td>
+    </tr>
+</table>
+</body>
+</html>
